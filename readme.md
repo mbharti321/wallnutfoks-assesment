@@ -5,6 +5,9 @@ This project is a simple backend service built using FastAPI to receive transact
 It simulates how real payment processors (like Razorpay) send transaction events and how a backend system handles them in a reliable way.
 
 ---
+## Hosted url: [wallnutfoks-assesment-production.up.railway.app](https://wallnutfoks-assesment-production.up.railway.app/)
+
+---
 ## Postman collection included in the project: [PostmanCollection](/Transactoins%20collection.postman_collection.json)
 
 ## Tech Stack

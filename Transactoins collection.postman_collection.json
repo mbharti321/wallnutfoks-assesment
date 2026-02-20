@@ -7,6 +7,90 @@
   },
   "item": [
     {
+      "name": "Hosted",
+      "item": [
+        {
+          "name": "health cehk Copy",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/#",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                ""
+              ],
+              "hash": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "v1/webhooks/transactions Copy",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"transaction_id\": \"txn_abc123def457\",\r\n    \"source_account\": \"acc_user_799\",\r\n    \"destination_account\": \"acc_merchant_458\",\r\n    \"amount\": 100,\r\n    \"currency\": \"INR\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/v1/webhooks/transactions",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "v1",
+                "webhooks",
+                "transactions"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/transactions/{id} Copy",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://wallnutfoks-assesment-production.up.railway.app/v1/transactions/txn_abc123def45899",
+              "protocol": "https",
+              "host": [
+                "wallnutfoks-assesment-production",
+                "up",
+                "railway",
+                "app"
+              ],
+              "path": [
+                "v1",
+                "transactions",
+                "txn_abc123def45899"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
       "name": "health cehk",
       "request": {
         "method": "GET",
