@@ -24,9 +24,9 @@ It simulates how real payment processors (like Razorpay) send transaction events
 
 ```
 app/
+    ├── models.py    # Database models
+    ├── database.py  # Database configuration
 ├── main.py      # API routes and background processing
-├── models.py    # Database models
-├── database.py  # Database configuration
 ```
 
 ---
