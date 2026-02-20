@@ -1,0 +1,90 @@
+{
+  "info": {
+    "_postman_id": "db667173-3321-445c-815c-2f518b732155",
+    "name": "Transactoins collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "32462562"
+  },
+  "item": [
+    {
+      "name": "health cehk",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/#",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            ""
+          ],
+          "hash": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "v1/webhooks/transactions",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"transaction_id\": \"txn_abc123def457\",\r\n    \"source_account\": \"acc_user_799\",\r\n    \"destination_account\": \"acc_merchant_458\",\r\n    \"amount\": 100,\r\n    \"currency\": \"INR\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/v1/webhooks/transactions",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "v1",
+            "webhooks",
+            "transactions"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/v1/transactions/{id}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/v1/transactions/txn_abc123def457",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "v1",
+            "transactions",
+            "txn_abc123def457"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
